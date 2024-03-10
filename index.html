@@ -82,7 +82,16 @@
                 
               </td>
               <td width="20%" height="200" bgcolor="">
-                <img src="images/Md_Ashik.jpg" alt="CVPhoto" width="65%" height="200">
+                <picture>
+			<!-- Source for devices with a width less than or equal to 767 pixels (typical mobile devices) -->
+			<source media="(max-width: 767px)" srcset="images/Md_Ashik.jpg">
+
+			<!-- Source for devices with a width greater than 767 pixels (typical desktop devices) -->
+			<source media="(min-width: 768px)" srcset="images/Md_Ashik.jpg">
+
+			<!-- Fallback for browsers that do not support the <picture> element or media queries -->
+			<img src="images/Md_Ashik.jpg" alt="CVPhoto" width="65%" height="200">
+		</picture>
               </td>
             </tr>
           </table>
@@ -257,7 +266,7 @@
               <summary>Click to Expand</summary>
               <ul>
                 <li> CGPA- 3.58 </li>
-				<li> Graduated with "Distinction</li>
+		<li> Graduated with "Distinction</li>
               </ul>
 
             </details>
@@ -289,7 +298,7 @@
             <details>
               <summary>Click to Expand</summary>
               <ul>
-				<li>Major - Science</li>
+		<li>Major - Science</li>
                 <li> GPA - 4.50</li>
               </ul>
             </details>
@@ -320,7 +329,7 @@
             <details>
               <summary>Click to Expand</summary>
               <ul>
-				<li>Major - Science</li>
+		<li>Major - Science</li>
                 <li> GPA - 5.00</li>
               </ul>
             </details>
